@@ -1,12 +1,14 @@
-import React from 'react';
+import React from "react";
 const Login = () => {
     return (
         <section className="bg-white dark:bg-gray-900">
             <div className="flex justify-center h-screen">
-                <div className="hidden bg-cover lg:block lg:w-2/4 bg-cover-img"  >
+                <div className="hidden bg-cover lg:block lg:w-2/4 bg-cover-img">
                     <div className="flex items-center h-full px-20 bg-gray-900 bg-opacity-40">
                         <div>
-                            <h2 className="text-2xl font-bold text-white sm:text-3xl">Howdie You All</h2>
+                            <h2 className="text-2xl font-bold text-white sm:text-3xl">
+                                Howdie You All
+                            </h2>
 
                             <p className="max-w-xl mt-3 text-gray-300">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
@@ -22,7 +24,8 @@ const Login = () => {
                             <p className="mt-3 text-gray-500 dark:text-gray-300">Sign in to access your account</p>
                         </div>
                         <div className="mt-8">
-                            <form>
+                            <form onSubmit={checkData}>
+
                                 <div>
                                     <label htmlFor="email" className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email Address</label>
                                     <input
@@ -34,11 +37,20 @@ const Login = () => {
                                         className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                     />
                                 </div>
-
                                 <div className="mt-6">
                                     <div className="flex justify-between mb-2">
-                                        <label htmlFor="password" className="text-sm text-gray-600 dark:text-gray-200">Password</label>
-                                        <a href="#" className="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline">Forgot password?</a>
+                                        <label
+                                            htmlFor="password"
+                                            className="text-sm text-gray-600 dark:text-gray-200"
+                                        >
+                                            Password
+                                        </label>
+                                        <a
+                                            href="#"
+                                            className="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline"
+                                        >
+                                            Forgot password?
+                                        </a>
                                     </div>
 
                                     <input
