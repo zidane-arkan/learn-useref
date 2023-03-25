@@ -22,12 +22,11 @@ const Login = () => {
                             <p className="mt-3 text-gray-500 dark:text-gray-300">Sign in to access your account</p>
                         </div>
                         <div className="mt-8">
-                            <form onSubmit={checkData}>
-                                
+                            <form>
                                 <div>
                                     <label htmlFor="email" className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email Address</label>
                                     <input
-                                        
+
                                         type="email"
                                         name="email"
                                         id="email"
@@ -43,7 +42,7 @@ const Login = () => {
                                     </div>
 
                                     <input
-                                        
+
                                         type="password"
                                         name="password"
                                         id="password"
