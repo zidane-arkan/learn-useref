@@ -29,7 +29,6 @@ const Login = () => {
                                 <div>
                                     <label htmlFor="email" className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email Address</label>
                                     <input
-
                                         type="email"
                                         name="email"
                                         id="email"
@@ -52,9 +51,7 @@ const Login = () => {
                                             Forgot password?
                                         </a>
                                     </div>
-
                                     <input
-
                                         type="password"
                                         name="password"
                                         id="password"
