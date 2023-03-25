@@ -26,7 +26,7 @@ const Login = () => {
               </p>
             </div>
             <div className="mt-8">
-              <form onSubmit>
+              <form>
                 <div>
                   <label
                     htmlFor="email"
